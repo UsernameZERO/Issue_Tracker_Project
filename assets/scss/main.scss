@@ -1,0 +1,116 @@
+#main-m{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    #P-form{
+        grid-row: 1/3;
+    }
+    #P-add{
+        display: flex;
+        flex-direction: column;
+        align-items: inherit;
+        padding: 9rem;
+        color: aqua;
+        label{
+            margin-bottom: 10px;
+            margin-left: 5px;
+            text-transform: uppercase;
+        }
+        input{
+            margin-bottom: 15px;
+            border-radius: 15px;
+            text-align: center;
+            text-transform: capitalize;
+            border: 4px solid rgb(112, 28, 28);
+            box-shadow: 2px 2px 10px salmon;
+            padding: 5px;
+        }
+        textarea{
+            border-radius: 20px;
+            padding: 10px;
+            text-transform: capitalize;
+            border: 4px solid rgb(112, 28, 28);
+            box-shadow: 1px 1px 10px rgb(179, 80, 71);
+        }
+        #p-btn{
+            width:7rem;
+            padding: 3px;
+            margin: auto;
+            text-transform: uppercase;
+            border-radius: 10px;
+            border:3px solid green;
+            box-shadow: 1px 1px 15px lightblue;
+            cursor: pointer;
+            background-color: black;
+            color: gold;
+        }
+        #p-btn:hover{
+            background-color: chartreuse;
+            color: black;
+        }
+    }
+    #PL{
+        color:rgb(212, 69, 69);
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-align: center;
+        text-shadow: 4px 1px 1px salmon;
+        text-decoration: underline;
+        
+    }
+    #display-P{
+        display:grid;
+        grid-area: 2/2;
+        grid-gap: 15px 20px;
+        padding: 10% 7.8%;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 43%));
+        #P-box{
+            border: 3px solid rgb(226, 81, 81);
+            border-radius: 15px;
+            padding: 5px;
+            a{
+                color: rgb(141, 210, 30);
+                text-transform: capitalize;
+                text-decoration: none;
+
+                .head{
+                    color: aliceblue;
+                    text-shadow: 3px 3px 1px  red;
+                    text-align: center;
+                    p{
+                        margin: 0%;
+                    }
+                }
+                .mid{
+                    color:rgb(185, 59, 143);
+                    text-align: end;
+                    margin-right: 2rem;
+                    p{
+                        margin: 0%;
+                    }
+                }
+                .btm{
+                    height: 4rem;
+                    margin-left: 3px;
+                    margin-right: 3px;
+                    border: 2px solid wheat;
+                    border-radius: 10px;
+                    overflow: scroll;
+                    margin-bottom: 6px;
+                    p{
+                        color: rgb(194, 115, 18);
+                        margin: 0%;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        #P-box:hover{
+            background-color: rgb(78, 27, 25);
+        }
+
+
+    }
+
+    
+}

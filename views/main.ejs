@@ -1,0 +1,44 @@
+<div id="main-m">
+  <div id="P-form">
+    <form id="P-add" action="/project/create" method="post">
+      <label>Project Name</label>
+      <input type="text" name="name" placeholder="Project Name" required />
+      <label for="desc">Description</label>
+      <textarea
+        name="descriptionForP"
+        id="desc"
+        cols="1"
+        rows="3"
+        placeholder="Description"
+        required
+      ></textarea>
+      <label for="auth">Author</label>
+      <input
+        type="text"
+        name="authorForP"
+        id="auth"
+        placeholder="Author Name"
+        required
+      />
+      <button id="p-btn" type="submit">Add project</button>
+    </form>
+  </div>
+  <p id="PL">Projects Lists</p>
+  <div id="display-P">
+    <%for(prj of projectsList){%>
+    <div id="P-box">
+      <a href="/project/<%= prj.id%>">
+        <div class="head">
+          <p><%= prj.name%></p>
+        </div>
+        <div class="mid">
+          <p>- <%= prj.authorForP%></p>
+        </div>
+        <div class="btm">
+          <p>Description : <%= prj.descriptionForP%></p>
+        </div>
+      </a>
+    </div>
+    <%}%>
+  </div>
+</div>

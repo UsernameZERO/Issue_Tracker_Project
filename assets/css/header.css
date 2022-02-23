@@ -1,0 +1,15 @@
+#main-H {
+  background-color: #9c94e7;
+  height: 4rem; }
+  #main-H header {
+    display: flex; }
+    #main-H header #home {
+      margin-left: 2%; }
+      #main-H header #home a {
+        text-decoration: none;
+        color: #020c13;
+        text-transform: capitalize;
+        font-size: 1.3rem; }
+    #main-H header #heading {
+      margin: auto;
+      text-shadow: 1px 1px 8px #2600ff; }

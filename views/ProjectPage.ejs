@@ -1,0 +1,81 @@
+<script src="/js/issueform.js"></script>
+<div id="przDetails">
+  <p>Project: <%= project.name%></p>
+  <p>Author: <%=project.authorForP%></p>
+  <p>About: <%= project.descriptionForP%></p>
+  <p id="isu-p">
+    <span id="cnt">[ <%= project.issues.length%> ]</span> Isuues In The Project
+  </p>
+</div>
+
+<div id="create-issue">
+  <form id="creation" action="/project/create-issue" method="post">
+    <label for="T">Title</label>
+    <input type="text" id="T" name="title" placeholder="Bug Name" required />
+    <label for="D">Description</label>
+    <input
+      type="text"
+      id="D"
+      name="descriptionForI"
+      placeholder="About"
+      required
+    />
+    <input type="hidden" name="labels_storage" id="label-storage" />
+    <div>
+      <label for="L">Label</label>
+      <input type="text" id="L" name="label" placeholder="Add a Tag" multiple />
+      <input type="button" id="btn-label" value="ADD" />
+    </div>
+    <div id="results" style="position: relative; top: 0px"></div>
+    <div id="LabelsAdded"></div>
+    <label for="A">Author</label>
+    <input
+      type="text"
+      id="A"
+      name="authorForI"
+      placeholder="Your Name"
+      required
+    />
+    <input type="hidden" name="project" value="<%=project.id%>" />
+    <button id="btn-issue" type="submit">ADD ISSUE</button>
+  </form>
+
+  <div id="s-desc">
+    <form action="" id="search-form">
+      <input
+        type="text"
+        name="desc"
+        id="dsc-title"
+        placeholder="Search For Title Or Description"
+        required
+      />
+      <button id="btn-srch" type="submit">Search</button>
+    </form>
+  </div>
+</div>
+<div id="filter">
+  <details class="f-L">
+    <summary>Labels</summary>
+    <div class="label-f">
+      <form action="">
+        <%for(lbl of unqLabels){%>
+        <input type="checkbox" id="filterL-<%=lbl%>" value="<%=lbl%>" />
+        <label class="f-labelName" for="filterL-<%=lbl%>"><%= lbl %></label>
+        <%}%>
+      </form>
+    </div>
+  </details>
+  <details class="f-A">
+    <summary>Authors</summary>
+    <div class="label-a">
+      <form action="">
+        <%for(authr of unqAuthors){%>
+        <input type="checkbox" id="filterA" value="<%= authr%>" name="Author" />
+        <label class="f-authorName" for="filterA"> <%= authr %></label>
+        <%}%>
+      </form>
+    </div>
+  </details>
+  <input type="button" id="btn-filter" value="filter" />
+</div>
+<div><%- include('./partials/showIssues')%></div>

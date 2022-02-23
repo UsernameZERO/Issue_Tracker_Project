@@ -1,0 +1,22 @@
+<div id="show-I">
+  <h3 id="bug">Bugs</h3>
+  <div class="displayIssues">
+    <%for(let isu of issuesList){%>
+    <div class="issue-box">
+      <div class="firstBox">
+        <h3 id="box-T">Bug: <%= isu.title%></h3>
+        <span id="box-A">-<%= isu.authorForI%></span>
+      </div>
+      <div class="middleBox">
+        <p id="box-D">Description : <%= isu.descriptionForI%></p>
+      </div>
+      <div class="finalBox">
+        <span id="Mtag">Tags :</span>
+        <%for(let tag of isu.label){%>
+        <span id="L-tag"><%= tag%></span>
+        <%}%>
+      </div>
+    </div>
+    <%}%>
+  </div>
+</div>

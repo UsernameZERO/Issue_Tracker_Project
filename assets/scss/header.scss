@@ -1,0 +1,20 @@
+#main-H{
+    background-color: rgb(156, 148, 231);
+    height: 4rem;
+   header{
+       display: flex;
+       #home{
+           margin-left: 2%;
+           a{
+               text-decoration: none;
+               color: rgb(2, 12, 19);
+               text-transform: capitalize;
+               font-size: 1.3rem;
+           }
+       }
+       #heading{
+           margin: auto;
+           text-shadow: 1px 1px 8px rgb(38, 0, 255);
+       }
+   }
+}

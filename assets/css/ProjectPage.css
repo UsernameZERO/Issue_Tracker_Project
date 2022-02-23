@@ -1,0 +1,122 @@
+#przDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 10rem;
+  margin-bottom: 2rem;
+  margin: 1rem; }
+  #przDetails p {
+    color: azure;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase; }
+    #przDetails p #cnt {
+      color: red;
+      margin-bottom: 1rem; }
+
+#create-issue {
+  display: flex;
+  width: 75vw;
+  color: #3280cf; }
+  #create-issue #creation {
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    margin-left: 2%; }
+    #create-issue #creation label {
+      font-size: 1.2rem; }
+    #create-issue #creation input {
+      border-radius: 10px;
+      border: 1px solid black;
+      padding: 0.4rem;
+      margin-bottom: 5px;
+      background-color: #42a4b6;
+      box-shadow: 1px 1px 10px #db533b; }
+    #create-issue #creation #LabelsAdded {
+      height: 5rem;
+      overflow: scroll; }
+      #create-issue #creation #LabelsAdded label {
+        margin-right: 10rem; }
+      #create-issue #creation #LabelsAdded .tags {
+        overflow: auto;
+        margin: 9px;
+        margin-right: 21px;
+        border: 3px solid black;
+        background-color: #e08a19;
+        color: black;
+        width: 5rem;
+        border-radius: 20px;
+        padding: 3px;
+        padding-top: 0px; }
+    #create-issue #creation #btn-label {
+      cursor: pointer;
+      background-color: black;
+      color: #938fca; }
+    #create-issue #creation #btn-issue {
+      cursor: pointer;
+      border-radius: 20px;
+      border: 2px solid black;
+      box-shadow: 1px 1px 10px coral;
+      padding: 0.4rem;
+      background-color: black;
+      color: #938fca; }
+  #create-issue #s-desc {
+    margin: auto; }
+    #create-issue #s-desc form {
+      display: flex;
+      flex-direction: column; }
+      #create-issue #s-desc form input {
+        width: 20rem;
+        padding: 0.6rem;
+        font-size: 1.1rem;
+        border-radius: 2rem;
+        border: 1px solid white;
+        box-shadow: 1px 1px 25px #ceff5a;
+        text-align: center;
+        background-color: aliceblues; }
+      #create-issue #s-desc form #btn-srch {
+        margin-top: 10px;
+        width: 4rem;
+        margin-left: 40%;
+        height: 2.4rem;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 2px solid maroon;
+        background-color: black;
+        color: #938fca; }
+
+#filter {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: -17rem;
+  margin-right: 7rem;
+  height: 15rem; }
+  #filter details {
+    margin-left: 9rem;
+    margin-right: -3rem;
+    cursor: pointer; }
+    #filter details summary {
+      width: 8rem;
+      color: #3280cf; }
+    #filter details form {
+      background-color: #b193cc;
+      display: flex;
+      flex-direction: column;
+      height: 10rem;
+      overflow: auto;
+      border-radius: 10px;
+      width: 8rem; }
+      #filter details form label {
+        padding: 0.3rem; }
+  #filter #btn-filter {
+    margin-right: -100px;
+    height: 2rem;
+    width: 4rem;
+    padding: 0.3rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-top: -5px;
+    border: 2px solid maroon;
+    background-color: black;
+    color: #938fca;
+    cursor: pointer; }
