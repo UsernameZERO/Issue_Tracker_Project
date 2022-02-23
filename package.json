@@ -16,5 +16,8 @@
     "mongoose": "^6.2.2",
     "node-sass-middleware": "^1.0.1",
     "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "14.18.3"
   }
 }
