@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
 
-// mongoose.connect('mongodb://localhost/Git-Issue');
-const dbUrl = 'mongodb+srv://UsernameZero:UsernameZero@cluster0.oe1eg.mongodb.net/Git-Issue';
-mongoose.connect( dbUrl , {useNewUrlParser: true});
+mongoose.connect('mongodb://localhost/Git-Issue');
+// const dbUrl = 'mongodb+srv://UsernameZero:UsernameZero@cluster0.oe1eg.mongodb.net/Git-Issue';
+// mongoose.connect( dbUrl , {useNewUrlParser: true});
 
 const db = mongoose.connection;
 
