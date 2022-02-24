@@ -28,7 +28,7 @@ module.exports.create = function(req, res){
             return;
         }
     });
-    return res.redirect('/');
+    return res.redirect('back');
 }
 
 module.exports.projectPage = async function(req, res){
